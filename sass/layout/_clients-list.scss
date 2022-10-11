@@ -1,8 +1,10 @@
-.clients-list {
-    display: flex;
-    padding: 0;
-    margin: 0 auto;
-    justify-content: space-between;
+@media screen and (max-width: 767px) {
+    .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px;
+        padding-left: 0;    
+    }
 }
 
 .clients-list__link {
@@ -24,8 +26,42 @@
 
 .clients-list__icon {
     display: block;
-    width: 170px;
+    width: 210px;
     height: 92px;
-    padding: 16px 32px;
+    padding: 16px 52px;
+}
+
+@media screen and (min-width: 768px) {
+    .clients-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 26px;
+        padding-left: 0;
+    }
+
+    
+    .clients-list__icon {
+        display: block;
+        width: 226px;
+        height: 92px;
+        padding: 16px 60px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-list {
+        display: flex;
+        padding: 0;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    .clients-list__icon {
+        display: block;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+    }
+
 }
 

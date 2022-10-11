@@ -1,10 +1,9 @@
-.footer-links {
-    display: block;
-    width: 206px;
-    height: 132px;
-    margin-right: auto;
-    margin-left: 31px;
-    padding-top: 12px;
+@media screen and (max-width: 767px) {
+    .footer-links {
+        display: block;
+        width: 206px;
+        margin: 60px 0;
+    }
 }
 
 .footer-links__title {
@@ -54,4 +53,19 @@
     width: 20px;
     height: 20px;
     fill: var(--primary-white-color);
+}
+
+@media screen and(min-width: 768px) {
+    .footer-links {
+        display: block;
+        width: 206px;
+        
+        margin-left: 165px;
+        margin-bottom: 102px;
+    }
+
+}
+
+@media screen and(min-width: 1200px) {
+    
 }
